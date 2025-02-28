@@ -6,25 +6,33 @@ Your task is to build an agent to play two versions (standard and misère) of  t
 
 Your program should be called red_blue_nim and the command line invocation should follow the following format:
 
-red_blue_nim.py <num-red> <num-blue> <version> <first-player> <depth>
+- red_blue_nim.py <num-red> <num-blue> <version> <first-player> <depth>
+
 <num-red> and <num-blue> are required. (Number of red and blue marbles respectively)
 <version> is either
-standard - Player loses if either pile empty on their turn [default option if <version> is not given]
-misere - Player wins if either pile empty on their turn
- <first-player> can be
-computer - play a full game from given state with computer starting the game followed by human [default option if <first-player> is not given]
-human - play a full game from given state with human starting the game followed by computer
+- standard - Player loses if either pile empty on their turn [default option if <version> is not given]
+- misere - Player wins if either pile empty on their turn
+
+<first-player> can be
+- computer - play a full game from given state with computer starting the game followed by human [default option if <first-player> is not given]
+- human - play a full game from given state with human starting the game followed by computer
+
 <depth>  only used if depth limited search (Extra Credit) is implemented.
 
 For a full game,
+
 On Computer turn, the program should use MinMax with Alpha Beta Pruning to determine the best move to make and perform the move.
+
 For move ordering in standard version, use:
-Pick 2 red marble
-Pick 2 blue marble
-Pick 1 red marble
-Pick 1 blue marble
+- Pick 2 red marble
+- Pick 2 blue marble
+- Pick 1 red marble
+- Pick 1 blue marble
+
 For misère version, invert that order.
+
 On Human turn, the program should use a prompt to get the move from the human user and perform the move.
+
 The program should alternate between these turns till the game ends (when the players run out of either red or blue marbles). Once the game ends, calculate who won and their final score and display it to the user.
 
 ## Task 2
