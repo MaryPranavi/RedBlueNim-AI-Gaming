@@ -6,7 +6,7 @@ Your task is to build an agent to play two versions (standard and misère) of  t
 
 Your program should be called red_blue_nim and the command line invocation should follow the following format:
 
-- red_blue_nim.py <num-red> <num-blue> <version> <first-player> <depth>
+- red_blue_nim.py "<num-red> <num-blue> <version> <first-player> <depth>"
 
 <num-red> and <num-blue> are required. (Number of red and blue marbles respectively)
 <version> is either
