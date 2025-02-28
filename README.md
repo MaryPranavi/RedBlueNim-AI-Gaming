@@ -1,10 +1,10 @@
 # RedBlueNim-AI-Gaming
 
-##Instructions to execute the program 
+## Instructions to execute the program 
 
-###command: python RedBlueNim.py <red> <blue> <player> <depth>
+### command: python RedBlueNim.py <red> <blue> <player> <depth>
 
-###methods: 
+### methods: 
 
 findminmaxAlgo(): It is used to select the player's turns and find the winning score
 find_alpha_beta(): it implements minmax algorithm
